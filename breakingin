@@ -37,6 +37,13 @@ Event:FireServer(A_1)
 end
 end)
 
+MainMan:Button("Bedtime InstaHeal", function()
+for i = 1, 200 do
+
+game:GetService("ReplicatedStorage").RemoteEvents.BedTime:FireServer()
+end
+end)
+
 MainMan:Button("Kill Enemies", function()
    for i,v in pairs(game.Workspace.BadGuys:GetChildren()) do
 	
